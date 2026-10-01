@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CCT 360 - Two Stories, Same Images</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Two Stories, Same Three Images</h1>
+  <p class="intro">
+    Click a button to see the same three pictures tell a different story,
+    just by changing the order they appear in.
+  </p>
+
+  <!-- The two buttons that start each story -->
+  <div class="buttons">
+    <button onclick="playStoryA()">Story 1: The Mystery</button>
+    <button onclick="playStoryB()">Story 2: The Happy Surprise</button>
+  </div>
+
+  <!-- The story title and text get written here by JavaScript -->
+  <h2 id="storyTitle">Click a button to begin</h2>
+  <p id="storyText"></p>
+
+  <!-- The three image slots in order: beginning, middle, end -->
+  <div class="story-images">
+    <div class="slot">
+      <img id="img1" src="img/scene1-house.svg">
+      <p id="caption1">Beginning</p>
+    </div>
+    <div class="slot">
+      <img id="img2" src="img/scene1-house.svg">
+      <p id="caption2">Middle</p>
+    </div>
+    <div class="slot">
+      <img id="img3" src="img/scene1-house.svg">
+      <p id="caption3">End</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
